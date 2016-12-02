@@ -1,0 +1,10 @@
+Pseudocode PerfectSquare
+Define findhighperfectsq (a):
+ 	Import math
+  SquareRoot ? va
+  If round SquareRoot - SquareRoot = 0:
+			aRoot=PerfectSquaRe:
+  Else
+			aRoot =NotPerfectSquaRe:	
+  aRounded = math.floor(SquareRoot)
+  Print(aRounded + “Largest perfect square that is less than” a)

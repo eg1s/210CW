@@ -1,0 +1,8 @@
+REVERSE_WORD(sentence)
+    words = split sentence into an array
+    for i<- 1 to (words.size()+2)//2
+        reverse the position of i-1 and -i
+    reversed_sentence = convert the array into a string
+    RETURN reversed_sentence
+
+Big O notation: O(n)

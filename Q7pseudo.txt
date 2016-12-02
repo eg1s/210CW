@@ -1,0 +1,12 @@
+number <- any given integer value
+
+Prime(num, test <- number)
+If num = 2 OR test = 1 {
+	Return TRUE
+} Else If num mod test = 0 {
+	Return IS_PRIME(num, test-1)
+}
+Return FALSE
+}
+
+PRINT Prime(number)

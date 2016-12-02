@@ -1,0 +1,55 @@
+ADDMATRIX(B,C):
+	W <- INPUT matrix order					
+	for X <- to W:						
+		for y <- to W:					
+			SUM[X,Y] <- B[X,Y] + C[X,Y]		
+	RETURN SUM
+						
+Big O notation: (n*n)
+
+
+SUBMATRIX(B,C):
+	W <- INPUT matrix order					
+	for X <- to W:						
+		for Y <- to W:					
+			SUM[X,Y] <- B[X,Y] - C[X,Y]		
+	RETURN SUM						
+
+Big O notation: (n*n)
+
+MULTIPLYMATRIX(B,C):
+	W <- INPUT matrix order					
+	for X <-1 to W:						
+		for Y <-1 to W:					
+			SUM[X,Y] <- 0				
+for X <- to W:							
+	for Y <- to W:						
+		for Z <- to W:					
+		SUM[X,Y] <- SUM[X,Y] + B[X,Z] * C[Z,Y]		
+	RETURN SUM
+	
+Big O notation: (n*n*n)					
+
+
+R = B*C +2 (B+C)
+R1 <- MULT_MAT(B,C)
+R2 <- ADD_MAT(B,C)
+R3 <- MULT_MAT(R2,2)
+R <- R1 + R3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
